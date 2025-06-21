@@ -1,0 +1,19 @@
+.publish-toolbar {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.publish-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+.publish-button:hover {
+  background-color: #218838;
+}

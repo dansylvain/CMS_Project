@@ -1,0 +1,49 @@
+/* MarkdownEditor.css - Styles for the markdown editor component */
+
+.markdown-editor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.editor-wrapper {
+  margin-bottom: 30px;
+}
+
+.preview-section {
+  margin-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+.preview-container {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  min-height: 300px;
+}
+
+/* Make sure images in the preview don't overflow */
+.preview-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for video embeds */
+.preview-container video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .markdown-editor-container {
+    padding: 10px;
+  }
+  
+  .editor-wrapper, 
+  .preview-section {
+    margin-bottom: 20px;
+  }
+}

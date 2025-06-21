@@ -1,53 +1,92 @@
-# ✍️ ArticleForge – Éditeur markdown intelligent
+# ArticleForge - Markdown Article Editor
 
-## 🎯 Objectif
-Créer une application React moderne permettant de rédiger, illustrer, prévisualiser et publier des articles au format Markdown de manière simple et intuitive.
+A React-based markdown editor for creating and managing articles with embedded media.
 
-## 🧱 Fonctionnalités (MVP)
-- Éditeur markdown interactif (ex: react-markdown-editor-lite)
-- Ajout d’illustrations (.webp, .gif, .webm, etc.)
-- Aperçu en temps réel de l’article final
-- Export de l’article en `.md`
-- Upload automatique vers un dépôt GitHub (via GitHub API)
-  - Dans le dossier `/articles/` ou `/projects/` selon le type d’article
-- Stockage des fichiers illustratifs dans un sous-dossier GitHub
+## Features
 
-## 🧭 Fonctionnalités futures (non-MVP)
-- Publication automatique sur Medium
-- Génération de post LinkedIn basé sur l’article
-- Authentification (éventuellement via GitHub ou Google)
-- Interface multilingue
+- **Markdown Editing**: Write articles using markdown syntax with syntax highlighting
+- **Live Preview**: See your markdown rendered in real-time
+- **Media Support**: Embed images, GIFs, and videos in your articles
+- **Clean UI**: Simple, intuitive interface for distraction-free writing
 
-## 🛠️ Contraintes techniques
-- **Framework principal** : React
-- **Librairies recommandées** :
-  - `react-markdown-editor-lite` ou équivalent moderne
-  - `react-dropzone` ou `react-uploady` pour le drag & drop d’images/vidéos
-  - Utilisation de `fetch` ou `axios` pour les appels à l’API GitHub
-- Utilisation de l’API REST de GitHub (pas GraphQL)
-- Les fichiers binaires doivent être encodés en base64 avant envoi
-- Structure claire et modulaire du code
+## Getting Started
 
-## 📁 Arborescence cible (à titre indicatif)
-ArticleForge/
-├── public/
-├── src/
-│ ├── components/
-│ │ ├── Editor.jsx
-│ │ ├── Preview.jsx
-│ │ ├── FileUploader.jsx
-│ ├── services/
-│ │ └── githubApi.js
-│ ├── App.jsx
-│ └── index.jsx
-├── README.md
-└── package.json
+### Prerequisites
 
-pgsql
-Copier
-Modifier
+- Node.js (v14 or higher)
+- npm or yarn
 
-## 🧠 Philosophie de développement
-- Travail itératif avec l’aide d’un LLM pour générer le code
-- Priorité à la lisibilité, la modularité, et la scalabilité
-- Publication progressive des fonctionnalités
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/articleforge.git
+   cd articleforge
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Usage
+
+### Basic Editing
+
+1. Type your markdown content in the editor
+2. See the live preview update in real-time
+3. Use the toolbar buttons for common formatting options
+
+### Adding Media
+
+1. Click the "Insert Media" button
+2. Enter the URL of the image, GIF, or video you want to embed
+3. Add alt text for accessibility
+4. Click "Insert" to add the media to your article
+
+### Markdown Syntax
+
+Here are some basic markdown syntax examples:
+
+```markdown
+# Heading 1
+## Heading 2
+
+**Bold text**
+*Italic text*
+
+[Link text](https://example.com)
+
+![Image alt text](https://example.com/image.jpg)
+
+- List item 1
+- List item 2
+
+1. Numbered item 1
+2. Numbered item 2
+
+> Blockquote text
+```
+
+## Future Enhancements
+
+- Saving articles to local storage or a database
+- User authentication
+- Publishing to external platforms (Medium, LinkedIn, etc.)
+- File uploads for media
+- Custom themes and styling options
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

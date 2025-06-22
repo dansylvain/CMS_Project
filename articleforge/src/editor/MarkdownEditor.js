@@ -44,7 +44,7 @@ const MarkdownEditor = () => {
   return (
     <div className="markdown-editor-container">
       <h2>Article Editor</h2>
-      <MediaToolbar onInsert={handleMediaInsert} />
+          <MediaToolbar onInsert={handleMediaInsert} />
       <div className="editor-wrapper">
         <MDEditor
           value={markdown}
